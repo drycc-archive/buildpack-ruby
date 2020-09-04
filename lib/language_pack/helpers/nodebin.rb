@@ -5,7 +5,7 @@ class LanguagePack::Helpers::Nodebin
     version = "12.16.2"
     {
       "number" => version,
-      "url"    => "http://buildpacks.drycc.cc/nodejs/node/release/linux-x64/node-v#{version}-linux-x64.tar.gz"
+      "url"    => "https://buildpacks.drycc.cc/nodejs/node/release/linux-x64/node-v#{version}-linux-x64.tar.gz"
     }
   end
 
@@ -13,7 +13,7 @@ class LanguagePack::Helpers::Nodebin
     version = "1.22.4"
     {
       "number" => version,
-      "url"    => "http://buildpacks.drycc.cc/nodejs/yarn/release/yarn-v#{version}.tar.gz"
+      "url"    => "https://buildpacks.drycc.cc/nodejs/yarn/release/yarn-v#{version}.tar.gz"
     }
   end
 

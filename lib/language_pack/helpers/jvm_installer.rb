@@ -4,7 +4,7 @@ class LanguagePack::Helpers::JvmInstaller
   include LanguagePack::ShellHelpers
 
   SYS_PROPS_FILE  = "system.properties"
-  JVM_BUCKET      = "http://buildpacks.drycc.cc/jvm"
+  JVM_BUCKET      = "https://buildpacks.drycc.cc/jvm"
   JVM_BASE_URL    = "#{JVM_BUCKET}/jdk"
   JVM_1_9_PATH    = "openjdk1.9-latest.tar.gz"
   JVM_1_8_PATH    = "openjdk1.8-latest.tar.gz"
