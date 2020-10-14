@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 describe "Bundler" do
+  it "can be configured with BUNDLE_WITHOUT env var with spaces in it" do
+    Hatchet::Runner.new("default_ruby", config: {"BUNDLE_WITHOUT" => "foo bar baz"}).tap do |app|
+      app.deploy do
+        expect(app.output).to match("BUNDLE_WITHOUT='foo:bar:baz'")
+        expect(app.output).to match("Your BUNDLE_WITHOUT contains a space")
+      end
+    end
+  end
+
   it "deploys with version 2.x with Ruby 2.5" do
     ruby_version = "2.5.7"
     abi_version = ruby_version.dup
@@ -33,7 +42,7 @@ describe "Bundler" do
   end
 
   it "deploys with version 1.x" do
-    abi_version = LanguagePack::RubyVersion::DEFAULT_VERSION_NUMBER
+    abi_version = LanguagePack::RubyVersion::DEFAULT_VERSION_NUMBER.dup
     abi_version[-1] = "0" # turn 2.6.6 into 2.6.0
     pending("Must enable HATCHET_EXPENSIVE_MODE") unless ENV["HATCHET_EXPENSIVE_MODE"]
 
