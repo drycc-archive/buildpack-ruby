@@ -1,6 +1,13 @@
 # Main (unreleased)
 
+## v222 (11/02/2020)
+
+* CNB support for Heroku-20 (https://github.com/heroku/heroku-buildpack-ruby/pull/1096)
+
+## v221 (10/22/2020)
+
 * Remove excessive Active Storage warnings (https://github.com/heroku/heroku-buildpack-ruby/pull/1087)
+* Add Heroku-20 to the download presence check (https://github.com/heroku/heroku-buildpack-ruby/pull/1093)
 
 ## v220 (8/7/2020)
 
