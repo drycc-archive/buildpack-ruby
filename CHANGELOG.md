@@ -1,5 +1,15 @@
 # Main (unreleased)
 
+* Remove support for the Cedar-14 and Heroku-16 stacks (https://github.com/heroku/heroku-buildpack-ruby/pull/1163)
+
+## v227 (4/19/2021)
+
+* Bundler 2.x is now 2.2.16 (https://github.com/heroku/heroku-buildpack-ruby/pull/1150)
+
+## v226 (4/13/2021)
+
+* Bundler 2.x is now 2.2.15 (https://github.com/heroku/heroku-buildpack-ruby/pull/1144)
+
 ## v225 (2/25/2021)
 
 * Bundler 2.x is now 2.2.11 (https://github.com/heroku/heroku-buildpack-ruby/pull/1132)
